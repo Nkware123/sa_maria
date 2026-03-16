@@ -19,18 +19,12 @@ class login extends BaseController
     $username=$this->request->getPost('username');
     $password=$this->request->getPost('password');
     $db =\Config\Database::connect();
-    $query = $db->query("SELECT * FROM users AS `user` join `fonction_poste` AS `poste` on poste.ID_FONCTION=user.ID_FONCTION join `agence` AS `ag` ON ag.ID_AGENCE=user.ID_AGENCE where USERNAME='".$username."' AND PASSWORD=".$password." AND user.EST_ACTIVE=1");
+    $query = $db->query("SELECT * FROM users AS `user` where USERNAME='".$username."' AND PASSWORD=".$password." AND user.EST_ACTIVE=1");
     $result = $query->getRow();
     if (!empty($result)) 
     {
       $session=[
-        'user_id'=>$result->USER_ID,
-        'nom_user'=>$result->NOM_USER,
-        'prenom_user'=>$result->PRENOM_USER,
-        'nom_fonction'=>$result->DESC_FONCTION,
-        'nom_lieu'=>$result->DESC_AGENCE,
-        'photo_profil'=>$result->PHOTO_PROFIL,
-        'function_id'=>$result->ID_FONCTION,
+        'user_id'=>$result->ID_USER
       ];
       session()->set($session);
       return redirect('dashbord/dashbord');
