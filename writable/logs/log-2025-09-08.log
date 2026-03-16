@@ -1,0 +1,424 @@
+INFO - 2025-09-08 07:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 07:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 07:46:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Hp\Documents\project\geco\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\Hp\Documents\project\geco\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'geco', 3306, '', 0)
+#1 C:\Users\Hp\Documents\project\geco\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Hp\Documents\project\geco\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Hp\Documents\project\geco\app\Controllers\login\login.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(941): App\Controllers\login\login->login()
+#5 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+#6 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Hp\Documents\project\geco\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Hp\Documents\project\geco\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Doc...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Hp\Documents\project\geco\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Hp\Documents\project\geco\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Hp\Documents\project\geco\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Hp\Documents\project\geco\app\Controllers\login\login.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(941): App\Controllers\login\login->login()
+#4 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+#5 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\Hp\Documents\project\geco\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\Hp\Documents\project\geco\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Doc...')
+#8 {main}
+CRITICAL - 2025-09-08 07:46:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\login\login.php(22): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users AS `user` join `fonction_poste` AS `poste` on poste.ID_FONCTION=user.ID_FONCTION join `agence` AS `ag` ON ag.ID_AGENCE=user.ID_AGENCE where USERNAME=\'Alain\' AND PASSWORD=12345 AND user.EST_ACTIVE=1')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:49:15 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:49:15 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:50:23 --> ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:51:32 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:51:32 --> [Caused by] ErrorException: Undefined variable $data2
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:53:24 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:53:24 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:53:51 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:53:51 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:55:21 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:55:21 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:55:34 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:55:34 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 07:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:55:45 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:55:45 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:56:23 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 4 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 07:56:23 --> [Caused by] ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 07:57:15 --> ErrorException: Undefined variable $data
+in APPPATH\Views\dashbord\Dashbord_view.php on line 42.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+ 5 APPPATH\Controllers\login\login.php(36): view('App\\Views\\dashbord\\Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\login\login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login\login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 07:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 07:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 08:22:14 --> Error: Cannot use a scalar value as an array
+in APPPATH\Controllers\dashbord\Dashbord.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 08:23:43 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\dashbord\Dashbord.php on line 26.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Controllers\\dashbord\\Dashbord.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 08:24:23 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Controllers\dashbord\Dashbord.php on line 26.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(26): json_decode([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 08:25:44 --> ParseError: syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Controllers\\dashbord\\Dashbord.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\dashbord\\Dashbord')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\dashbord\\Dashbord')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\dashbord\\Dashbord', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 08:27:12 --> ErrorException: Array to string conversion
+in APPPATH\Views\dashbord\Dashbord_view.php on line 91.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php', 91)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 5 APPPATH\Controllers\dashbord\Dashbord.php(28): view('dashbord/Dashbord_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 08:30:52 --> ParseError: syntax error, unexpected token "return"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Controllers\\dashbord\\Dashbord.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\dashbord\\Dashbord')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\dashbord\\Dashbord')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\dashbord\\Dashbord', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:31:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-08 08:41:05 --> ErrorException: Undefined property: stdClass::$EST_ACTIVE
+in APPPATH\Views\branche\branche_view.php on line 36.
+ 1 APPPATH\Views\branche\branche_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$EST_ACTIVE', 'C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\branche\\branche_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hp\\Documents\\project\\geco\\app\\Views\\branche\\branche_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\branche\\branche_view', [], true)
+ 5 APPPATH\Controllers\branche\branche.php(19): view('App\\Views\\branche\\branche_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\branche\branche->liste()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\branche\branche))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-08 08:47:20 --> mysqli_sql_exception: Unknown column 'EST_ACTIVE' in 'where clause' in C:\Users\Hp\Documents\project\geco\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Hp\Documents\project\geco\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\Hp\Documents\project\geco\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\Hp\Documents\project\geco\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\Hp\Documents\project\geco\app\Controllers\users\users.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(941): App\Controllers\users\users->liste()
+#5 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\users\users))
+#6 C:\Users\Hp\Documents\project\geco\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Hp\Documents\project\geco\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Hp\Documents\project\geco\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Doc...')
+#9 {main}
+CRITICAL - 2025-09-08 08:47:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'EST_ACTIVE' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\users\users.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\users\users->liste()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\users\users))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 08:47:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'EST_ACTIVE' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1')
+ 3 APPPATH\Controllers\users\users.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\users\users->liste()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\users\users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+CRITICAL - 2025-09-08 08:47:20 --> [Caused by] mysqli_sql_exception: Unknown column 'EST_ACTIVE' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1')
+ 4 APPPATH\Controllers\users\users.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fonction_poste WHERE EST_ACTIVE=1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\users\users->liste()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\users\users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hp\\Documents\\project\\geco\\public\\index.php')
+INFO - 2025-09-08 08:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-08 08:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

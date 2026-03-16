@@ -1,0 +1,26 @@
+INFO - 2026-03-11 14:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-11 14:53:18 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\geco\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\geco\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT RELEASE_...', 0)
+#1 C:\xampp\htdocs\geco\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT RELEASE_...')
+#2 C:\xampp\htdocs\geco\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT RELEASE_...')
+#3 C:\xampp\htdocs\geco\system\Session\Handlers\Database\MySQLiHandler.php(47): CodeIgniter\Database\BaseConnection->query('SELECT RELEASE_...')
+#4 C:\xampp\htdocs\geco\system\Session\Handlers\DatabaseHandler.php(241): CodeIgniter\Session\Handlers\Database\MySQLiHandler->releaseLock()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->close()
+#6 {main}
+INFO - 2026-03-11 14:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-11 14:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

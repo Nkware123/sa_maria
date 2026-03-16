@@ -1,0 +1,542 @@
+CRITICAL - 2024-05-24 20:23:06 --> ErrorException: Undefined variable: data
+in APPPATH\Controllers\Employe.php on line 129.
+ 1 APPPATH\Controllers\Employe.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Employe.php', 129, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->view_importation()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+ERROR - 2024-05-24 20:42:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'garmi_db' in C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'garmi_db', 3306, '', 0)
+#1 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\GARMI\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GARMI\app\Models\CommonModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GARMI\app\Controllers\ListeEmploye.php(18): App\Models\CommonModel->selectQuery()
+#6 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(941): App\Controllers\ListeEmploye->index()
+#7 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListeEmploye))
+#8 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\GARMI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\GARMI\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'garmi_db' in C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\GARMI\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\GARMI\app\Models\CommonModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\GARMI\app\Controllers\ListeEmploye.php(18): App\Models\CommonModel->selectQuery()
+#5 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(941): App\Controllers\ListeEmploye->index()
+#6 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListeEmploye))
+#7 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\GARMI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\GARMI\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2024-05-24 20:42:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'garmi_db'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `liste_employe`', [], false)
+ 3 APPPATH\Models\CommonModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\ListeEmploye.php(18): App\Models\CommonModel->selectQuery()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ListeEmploye->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListeEmploye))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 20:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 20:53:14 --> ErrorException: Undefined index: UPLOAD_FILE
+in APPPATH\Controllers\Employe.php on line 135.
+ 1 APPPATH\Controllers\Employe.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: UPLOAD_FILE', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Employe.php', 135, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->Add_FileImported()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 20:54:02 --> ErrorException: Undefined index: filename
+in APPPATH\Controllers\Employe.php on line 135.
+ 1 APPPATH\Controllers\Employe.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: filename', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Employe.php', 135, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->Add_FileImported()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 20:54:31 --> ErrorException: Undefined variable: UPLOAD_FILE
+in APPPATH\Controllers\Employe.php on line 137.
+ 1 APPPATH\Controllers\Employe.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: UPLOAD_FILE', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Employe.php', 137, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->Add_FileImported()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 20:54:38 --> ErrorException: Undefined variable: UPLOAD_FILE
+in APPPATH\Controllers\Employe.php on line 137.
+ 1 APPPATH\Controllers\Employe.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: UPLOAD_FILE', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Employe.php', 137, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->Add_FileImported()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 20:54:50 --> ErrorException: Undefined index: filename
+in APPPATH\Controllers\Employe.php on line 135.
+ 1 APPPATH\Controllers\Employe.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: filename', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Employe.php', 135, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->Add_FileImported()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:03:26 --> Error: Class 'App\Models\RestitutionModel' not found
+in APPPATH\Controllers\Restitution.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Restitution->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:07:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:08:02 --> ErrorException: Undefined variable: pageTitle
+in APPPATH\Views\importer_employer.php on line 3.
+ 1 APPPATH\Views\importer_employer.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pageTitle', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\importer_employer.php', 3, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\importer_employer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('importer_employer.php', [], true)
+ 5 APPPATH\Controllers\Employe.php(129): view('importer_employer.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->view_importation()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:08:58 --> RuntimeException: View themes, no current section.
+in SYSTEMPATH\View\View.php on line 425.
+ 1 APPPATH\Views\importer_employer.php(52): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\importer_employer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('importer_employer.php', [], true)
+ 5 APPPATH\Controllers\Employe.php(129): view('importer_employer.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->view_importation()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:09:03 --> RuntimeException: View themes, no current section.
+in SYSTEMPATH\View\View.php on line 425.
+ 1 APPPATH\Views\importer_employer.php(52): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\importer_employer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('importer_employer.php', [], true)
+ 5 APPPATH\Controllers\Employe.php(129): view('importer_employer.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->view_importation()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:09:20 --> RuntimeException: View themes, no current section.
+in SYSTEMPATH\View\View.php on line 425.
+ 1 APPPATH\Views\importer_employer.php(50): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\importer_employer.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('importer_employer.php', [], true)
+ 5 APPPATH\Controllers\Employe.php(129): view('importer_employer.php')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->view_importation()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:12:47 --> ErrorException: Undefined index: filename
+in APPPATH\Controllers\Employe.php on line 135.
+ 1 APPPATH\Controllers\Employe.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: filename', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Employe.php', 135, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->Add_FileImported()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:26:02 --> ErrorException: Undefined variable: affectations
+in APPPATH\Views\affectation.php on line 57.
+ 1 APPPATH\Views\affectation.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: affectations', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\affectation.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\affectation.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('affectation', [], true)
+ 5 APPPATH\Controllers\Affectation.php(37): view('affectation', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:42:41 --> Error: Class 'PhpOffice\PhpSpreadsheet\Reader\Xlsx' not found
+in APPPATH\Controllers\Employe.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Employe->Add_FileImported()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employe))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 21:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-24 21:53:23 --> mysqli_sql_exception: Unknown column 'historique.historique' in 'where clause' in C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\GARMI\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GARMI\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GARMI\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\GARMI\app\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+#8 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+#9 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\GARMI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\GARMI\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-24 21:53:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'historique.historique' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = :historique.historique:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:53:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'historique.historique' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = :historique.historique:', [...], false)
+ 4 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+ 6 APPPATH\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:53:23 --> [Caused by] mysqli_sql_exception: Unknown column 'historique.historique' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historique`
+WHERE `historique`.`historique` = :historique.historique:', [...], false)
+ 5 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+ERROR - 2024-05-24 21:54:05 --> mysqli_sql_exception: Table 'garmi_db.id_histolique' doesn't exist in C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\GARMI\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\GARMI\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\GARMI\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\GARMI\app\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+#8 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+#9 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\GARMI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\GARMI\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-24 21:54:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'garmi_db.id_histolique' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = :id_histolique.historique:', [...], false)
+ 2 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:54:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'garmi_db.id_histolique' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = :id_histolique.historique:', [...], false)
+ 4 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+ 6 APPPATH\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:54:05 --> [Caused by] mysqli_sql_exception: Table 'garmi_db.id_histolique' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `id_histolique`
+WHERE `id_histolique`.`historique` = :id_histolique.historique:', [...], false)
+ 5 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\Affectation.php(149): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:54:26 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Affectation.php on line 150.
+ 1 APPPATH\Controllers\Affectation.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:55:05 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Affectation.php on line 150.
+ 1 APPPATH\Controllers\Affectation.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:55:07 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Affectation.php on line 150.
+ 1 APPPATH\Controllers\Affectation.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:55:08 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\Affectation.php on line 150.
+ 1 APPPATH\Controllers\Affectation.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:58:23 --> ErrorException: Undefined variable: pageTitle
+in APPPATH\Views\histoliqueEn.php on line 3.
+ 1 APPPATH\Views\histoliqueEn.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pageTitle', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histoliqueEn.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histoliqueEn.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histoliqueEn.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(146): view('histoliqueEn.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:59:07 --> ErrorException: Undefined variable: employers
+in APPPATH\Views\histoliqueEn.php on line 65.
+ 1 APPPATH\Views\histoliqueEn.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employers', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histoliqueEn.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histoliqueEn.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histoliqueEn.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histoliqueEn.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 21:59:32 --> ErrorException: Undefined variable: employe
+in APPPATH\Controllers\Affectation.php on line 153.
+ 1 APPPATH\Controllers\Affectation.php(153): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: employe', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 153, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 21:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 21:59:45 --> ErrorException: Undefined variable: materiel
+in APPPATH\Views\histoliqueEn.php on line 74.
+ 1 APPPATH\Views\histoliqueEn.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: materiel', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histoliqueEn.php', 74, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histoliqueEn.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histoliqueEn.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histoliqueEn.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 22:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 22:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 22:07:31 --> ErrorException: Undefined variable: affectations
+in APPPATH\Views\histolique.php on line 49.
+ 1 APPPATH\Views\histolique.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: affectations', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histolique.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histolique.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 22:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 22:08:12 --> ErrorException: Trying to get property 'Nom' of non-object
+in APPPATH\Views\histolique.php on line 52.
+ 1 APPPATH\Views\histolique.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'Nom\' of non-object', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histolique.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histolique.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 22:09:09 --> ErrorException: Undefined index: lis
+in APPPATH\Controllers\Affectation.php on line 150.
+ 1 APPPATH\Controllers\Affectation.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lis', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-24 22:09:12 --> ErrorException: Undefined index: lis
+in APPPATH\Controllers\Affectation.php on line 150.
+ 1 APPPATH\Controllers\Affectation.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: lis', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 150, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 22:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 22:13:00 --> ErrorException: Trying to get property 'id_utilisateur' of non-object
+in APPPATH\Views\histolique.php on line 52.
+ 1 APPPATH\Views\histolique.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_utilisateur\' of non-object', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histolique.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histolique.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 22:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 22:13:30 --> ErrorException: Trying to get property 'nomMateriel' of non-object
+in APPPATH\Views\histolique.php on line 53.
+ 1 APPPATH\Views\histolique.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nomMateriel\' of non-object', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histolique.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histolique.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 22:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 22:14:11 --> ErrorException: Undefined index: nomMateriel
+in APPPATH\Views\histolique.php on line 53.
+ 1 APPPATH\Views\histolique.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomMateriel', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histolique.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histolique.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 22:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-24 22:14:35 --> ErrorException: Undefined index: type_action
+in APPPATH\Views\histolique.php on line 55.
+ 1 APPPATH\Views\histolique.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: type_action', 'C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\GARMI\\app\\Views\\histolique.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('histolique.php', [], true)
+ 5 APPPATH\Controllers\Affectation.php(154): view('histolique.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->v_histolique('1', '', '')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-24 22:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 22:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 22:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 22:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-24 22:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

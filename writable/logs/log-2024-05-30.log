@@ -1,0 +1,289 @@
+INFO - 2024-05-30 19:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 19:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 19:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-30 19:53:08 --> ParseError: syntax error, unexpected '$this' (T_VARIABLE), expecting ')'
+in APPPATH\Controllers\Affectation.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Affectation')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Affectation')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Affectation')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Affectation', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-30 19:54:12 --> ParseError: syntax error, unexpected '}', expecting ']'
+in APPPATH\Controllers\Affectation.php on line 77.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Affectation')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Affectation')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Affectation')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Affectation', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-30 19:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-30 19:55:55 --> mysqli_sql_exception: Unknown column '$id_fonction' in 'where clause' in C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT materiel...', 0)
+#1 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT materiel...')
+#2 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT materiel...')
+#3 C:\xampp\htdocs\GARMI\app\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel...')
+#4 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(941): App\Controllers\Affectation->index()
+#5 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+#6 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GARMI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\GARMI\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-05-30 19:55:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$id_fonction' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-30 19:55:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '$id_fonction' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction')
+ 3 APPPATH\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-30 19:55:55 --> [Caused by] mysqli_sql_exception: Unknown column '$id_fonction' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction')
+ 4 APPPATH\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=$id_fonction')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-30 19:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-30 19:56:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\GARMI\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT materiel...', 0)
+#1 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT materiel...')
+#2 C:\xampp\htdocs\GARMI\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT materiel...')
+#3 C:\xampp\htdocs\GARMI\app\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel...')
+#4 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(941): App\Controllers\Affectation->index()
+#5 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+#6 C:\xampp\htdocs\GARMI\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\GARMI\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\GARMI\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2024-05-30 19:56:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-30 19:56:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=')
+ 3 APPPATH\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-30 19:56:58 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=')
+ 4 APPPATH\Controllers\Affectation.php(29): CodeIgniter\Database\BaseConnection->query('SELECT materiel.id_materiel, id ,date_aff , employe.id_employe ,type_action.id_action , etape_validation.id_etape,date_rest,nomMateriel, Nom, prenom , numero_identifiant_OBR, matricule FROM materiel join affectation_restitution on affectation_restitution.id_materiel=materiel.id_materiel join employe on employe.id_employe=affectation_restitution.id_employe join type_action on type_action.id_action = affectation_restitution.id_action join etape_validation on etape_validation.id_etape = affectation_restitution.id_etape where id_statut_materiel=1 and etape_validation.id_fonction=')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-30 19:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 19:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-30 20:05:54 --> ParseError: syntax error, unexpected ')'
+in APPPATH\Controllers\Affectation.php on line 86.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Affectation')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Affectation')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Affectation')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Affectation', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+CRITICAL - 2024-05-30 20:06:46 --> ParseError: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\Affectation.php on line 99.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Affectation')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Affectation')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Affectation')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Affectation', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-30 20:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-30 20:12:28 --> ErrorException: Undefined variable: db
+in APPPATH\Controllers\Affectation.php on line 59.
+ 1 APPPATH\Controllers\Affectation.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Affectation->add_Aff()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Affectation))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-30 20:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-30 20:14:54 --> ParseError: syntax error, unexpected 'affectations' (T_STRING), expecting ')'
+in APPPATH\Controllers\Affectation.php on line 30.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Affectation.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Affectation')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Affectation')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Affectation')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Affectation', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-30 20:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:19:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-30 20:51:18 --> ParseError: syntax error, unexpected '=', expecting ')'
+in APPPATH\Controllers\Restitution.php on line 157.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\GARMI\\app\\Controllers\\Restitution.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Restitution')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Restitution')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Restitution')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Restitution', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\GARMI\\public\\index.php')
+INFO - 2024-05-30 20:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 20:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-30 21:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
