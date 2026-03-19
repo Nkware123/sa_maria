@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MUTEC sa</title>
+  <title>Bar Santa Maria</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -78,6 +78,8 @@
     </ul>
 
   </aside><!-- End Sidebar-->
+
+  
   <!-- Vendor JS Files -->
   <script src="<?=base_url()?>assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="<?=base_url()?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

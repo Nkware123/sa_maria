@@ -25,10 +25,11 @@ $routes->post('login/login','login\login::login');
 $routes->get('logout','login\login::logout');
 
 //routes dashbord
-$routes->get('dashbord/dashbord','dashbord\Dashbord::index');
+$routes->get('dashbord/dashbord','dashbord\Dashbord::get_view');
 $routes->get('dashbord/get_data','dashbord\Dashbord::get_data');
 $routes->post('dashbord/get_liste','dashbord\Dashbord::get_liste');
 $routes->post('dashbord/get_liste_by_type','dashbord\Dashbord::get_liste_by_type');
+$routes->post('dashbord/get_rapport','dashbord\Dashbord::get_rapport');
 
 //routes users
 $routes->get('user_liste','users\users::liste');

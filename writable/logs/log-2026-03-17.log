@@ -1,0 +1,970 @@
+INFO - 2026-03-17 06:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 06:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 06:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:35:25 --> ParseError: syntax error, unexpected token ";"
+in APPPATH\Views\dashbord\Dashbord_view.php on line 58.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(23): view('dashbord/Dashbord_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:36:59 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(23): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:37:09 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(23): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 06:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:37:18 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(23): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:38:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashbord/Dashbordview.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashbord/Dashbordview.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbordview', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(23): view('dashbord/Dashbordview', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:39:18 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(23): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:47:04 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:47:13 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:47:40 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:47:51 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:48:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login/login_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/login_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('login/login_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(22): view('login/login_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:48:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "views/login/login_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/login/login_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('views/login/login_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(22): view('views/login/login_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 06:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 06:48:47 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:01:38 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:02:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pp\Views\dashbord\Dashbord_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pp\\Views\\dashbord\\Dashbord_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pp\\Views\\dashbord\\Dashbord_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(22): view('pp\\Views\\dashbord\\Dashbord_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:03:12 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('App\\Views\\dashbord\\Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:03:57 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('App\\Views\\dashbord\\Dashbord_view')
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:03:59 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\dashbord\\Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('App\\Views\\dashbord\\Dashbord_view')
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 07:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 07:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 07:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:17:55 --> ParseError: syntax error, unexpected token ";"
+in APPPATH\Views\dashbord\Dashbord_view.php on line 115.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:19:30 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:20:24 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:21:30 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:21:49 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:22:03 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 07:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:27:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard/Dashboard_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/Dashboard_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/Dashboard_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashboard/Dashboard_view')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:43:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard/Dashboard_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/Dashboard_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashboard/Dashboard_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashboard/Dashboard_view')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:43:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashbord/Dashboard_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashbord/Dashboard_view.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashboard_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashboard_view')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:43:56 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 07:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:45:44 --> ParseError: Unmatched '}'
+in APPPATH\Views\dashbord\Dashbord_view.php on line 118.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:46:20 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 09:46:32 --> ErrorException: Undefined variable $temps_relatif
+in APPPATH\Views\dashbord\Dashbord_view.php on line 112.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temps_relatif', 'C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php', 112)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 5 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 09:47:11 --> ErrorException: Undefined variable $value
+in APPPATH\Views\dashbord\Dashbord_view.php on line 115.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php', 115)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 5 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 09:47:25 --> ErrorException: Undefined variable $data2
+in APPPATH\Views\dashbord\Dashbord_view.php on line 253.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(253): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php', 253)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 5 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 09:47:43 --> ErrorException: Undefined variable $data5
+in APPPATH\Views\dashbord\Dashbord_view.php on line 332.
+ 1 APPPATH\Views\dashbord\Dashbord_view.php(332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data5', 'C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php', 332)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 5 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 07:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:48:23 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:49:42 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:50:28 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('App\\Views\\sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('App\\Views\\sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(15): view('dashbord/Dashbord_view')
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 07:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 07:52:44 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(16): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 08:03:03 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+in SYSTEMPATH\HTTP\SiteURI.php on line 403.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(377): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(54): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\header.php(24): base_url(null)
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\header.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('header.php', [], true)
+ 7 APPPATH\Views\sidebar.php(33): view('header.php')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\sidebar.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('sidebar.php', [], true)
+11 APPPATH\Views\dashbord\Dashbord_view.php(4): view('sidebar.php')
+12 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sa_maria\\app\\Views\\dashbord\\Dashbord_view.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+15 APPPATH\Controllers\dashbord\Dashbord.php(16): view('dashbord/Dashbord_view', [...])
+16 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-17 08:07:44 --> mysqli_sql_exception: Unknown column 'ID_PRODUIT_LOT' in 'field list' in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ID_PRODU...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODU...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODU...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(43): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODU...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-17 08:07:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ID_PRODUIT_LOT' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(43): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-17 08:07:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ID_PRODUIT_LOT' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(43): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-17 08:07:44 --> [Caused by] mysqli_sql_exception: Unknown column 'ID_PRODUIT_LOT' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(43): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT_LOT,QTE,PU_ACHAT FROM produits WHERE ID_PRODUIT=2')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 08:08:49 --> ErrorException: Undefined variable $QTE
+in APPPATH\Controllers\dashbord\Dashbord.php on line 49.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $QTE', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 08:09:25 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\dashbord\Dashbord.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 08:10:29 --> ErrorException: Undefined variable $date_rapport
+in APPPATH\Controllers\dashbord\Dashbord.php on line 62.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $date_rapport', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 08:33:31 --> ParseError: syntax error, unexpected token ";", expecting "function" or "const"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 163.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\dashbord\\Dashbord')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\dashbord\\Dashbord')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\dashbord\\Dashbord', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 08:34:40 --> ErrorException: Undefined variable $MONTANT_TOTAL
+in APPPATH\Controllers\dashbord\Dashbord.php on line 67.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $MONTANT_TOTAL', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 08:36:42 --> ErrorException: Undefined variable $MONTANT_TOTAL
+in APPPATH\Controllers\dashbord\Dashbord.php on line 49.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $MONTANT_TOTAL', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 08:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 08:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 09:42:28 --> ParseError: syntax error, unexpected identifier "font"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 112.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\dashbord\\Dashbord')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\dashbord\\Dashbord')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\dashbord\\Dashbord', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 09:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 09:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 12:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 13:13:41 --> ParseError: syntax error, unexpected single-quoted string "card-title"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 82.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\dashbord\\Dashbord')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\dashbord\\Dashbord')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\dashbord\\Dashbord', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 13:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-17 13:21:17 --> ParseError: syntax error, unexpected single-quoted string "data", expecting "]"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 69.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\dashbord\\Dashbord')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\dashbord\\Dashbord')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\dashbord\\Dashbord', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-17 13:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 13:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 14:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 14:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 14:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 14:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 14:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 14:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-17 15:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

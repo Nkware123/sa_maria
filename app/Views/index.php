@@ -50,7 +50,8 @@
 
               <div class="navbar-logo"class="row" style="height: 100px">
                 <a href="" class="bg-white rounded">
-                   <img src="assets/img/logo.png" alt="logo" style="height: 100%;width: 100%; object-fit: contain;">
+                   <img src="" alt="logo" style="height: 100%;width: 100%; object-fit: contain;">
+                   <!-- <img src="assets/img/logo.png" alt="logo" style="height: 100%;width: 100%; object-fit: contain;"> -->
                   <!-- <center><h2><font color="red">H.P.N.B</font></h2></center> -->
                 </a>
               </div><!-- End Logo -->

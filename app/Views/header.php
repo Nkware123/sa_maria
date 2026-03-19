@@ -3,8 +3,8 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="#" class="logo d-flex align-items-center">
-        <img src="<?=base_url()?>assets/img/logo.png" alt="logo" style="height: 80px; width: auto;" class="img-fluid">
-        <span class="d-none d-lg-block">MUTEC sa</span>
+        <img src="<?//=base_url()?>assets/img/logo.png" alt="logo" style="height: 80px; width: auto;" class="img-fluid">
+        <span class="d-none d-lg-block">Santa-Maria</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -21,14 +21,14 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="<?=base_url(session()->get('photo_profil'))?>" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2"><?=session()->get('nom_user')?></span>
+            <img src="<?//=base_url(session()->get('photo_profil'))?>" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"><?//=session()->get('nom_user')?></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6><?=session()->get('nom_user').' '.session()->get('prenom_user')?></h6>
-              <span><?=session()->get('nom_fonction')?></span>
+              <h6><?//=session()->get('nom_user').' '.session()->get('prenom_user')?></h6>
+              <span><?//=session()->get('nom_fonction')?></span>
             </li>
             <li>
               <hr class="dropdown-divider">

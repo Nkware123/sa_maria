@@ -1,0 +1,568 @@
+INFO - 2026-03-19 14:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:09:12 --> mysqli_sql_exception: Table 'sa_maria.produit' doesn't exist in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT l.ID_PRO...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT l.ID_PRO...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT l.ID_PRO...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRO...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:09:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sa_maria.produit' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:09:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sa_maria.produit' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:09:12 --> [Caused by] mysqli_sql_exception: Table 'sa_maria.produit' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:09:22 --> mysqli_sql_exception: Table 'sa_maria.produit' doesn't exist in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT l.ID_PRO...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT l.ID_PRO...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT l.ID_PRO...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRO...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:09:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sa_maria.produit' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:09:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sa_maria.produit' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:09:22 --> [Caused by] mysqli_sql_exception: Table 'sa_maria.produit' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(133): CodeIgniter\Database\BaseConnection->query('SELECT l.ID_PRODUIT,DESC_PRODUIT, SUM(QTE) tot_qte, SUM(PU_ACHAT) tot_ach FROM produits_lot l JOIN produit p ON p.ID_PRODUIT=l.ID_PRODUIT WHERE l.EST_ACTIVE=1  GROUP BY ID_PRODUIT')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:10:21 --> mysqli_sql_exception: Unknown column 'p.ID_PRODUIT_LOT' in 'on clause' in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ID_PRODU...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODU...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODU...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODU...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:10:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.ID_PRODUIT_LOT' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:10:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.ID_PRODUIT_LOT' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:10:21 --> [Caused by] mysqli_sql_exception: Unknown column 'p.ID_PRODUIT_LOT' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:12:32 --> mysqli_sql_exception: Column 'QTE' in field list is ambiguous in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ID_PRODU...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODU...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODU...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODU...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:12:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'QTE' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:12:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'QTE' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:12:32 --> [Caused by] mysqli_sql_exception: Column 'QTE' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(142): CodeIgniter\Database\BaseConnection->query('SELECT ID_PRODUIT, SUM(QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-19 14:13:03 --> ErrorException: Undefined variable $date_rapport
+in APPPATH\Controllers\dashbord\Dashbord.php on line 156.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $date_rapport', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 156)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-19 14:15:49 --> Error: Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\dashbord\Dashbord.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-19 14:16:49 --> ErrorException: Undefined array key "tot_qte"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 146.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tot_qte"', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-19 14:16:58 --> ErrorException: Undefined array key "tot_qte"
+in APPPATH\Controllers\dashbord\Dashbord.php on line 146.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tot_qte"', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 146)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-19 14:17:56 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\dashbord\Dashbord.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_rapport()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-19 14:52:33 --> ErrorException: Undefined variable $db
+in APPPATH\Controllers\dashbord\Dashbord.php on line 17.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\dashbord\\Dashbord.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:52:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1 in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT (SUM(QTE...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (SUM(QTE...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (SUM(QTE...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT (SUM(QTE...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:52:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:52:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:52:52 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT (SUM(QTE) tot_qte * SUM(PU_ACHAT)) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:53:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1 in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(QTE)...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE)...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE)...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE)...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:53:13 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:53:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:53:13 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(17): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) tot_qte * SUM(PU_ACHAT) as tot_ach FROM produits_lot WHERE EST_ACTIVE=1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-03-19 16:53:34 --> Error: Object of class stdClass could not be converted to string
+in APPPATH\Views\dashbord\Dashbord_view.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dashbord/Dashbord_view', [], true)
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(22): view('dashbord/Dashbord_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:58:29 --> mysqli_sql_exception: Unknown column 'EST_ACTIVE' in 'where clause' in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(QTE)...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE)...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE)...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE)...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:58:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'EST_ACTIVE' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:58:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'EST_ACTIVE' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:58:29 --> [Caused by] mysqli_sql_exception: Unknown column 'EST_ACTIVE' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE EST_ACTIVE=1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 14:58:54 --> mysqli_sql_exception: Unknown column 'ID_RAISON_SORTIES' in 'where clause' in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(QTE)...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE)...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE)...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE)...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 14:58:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ID_RAISON_SORTIES' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:58:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ID_RAISON_SORTIES' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 14:58:54 --> [Caused by] mysqli_sql_exception: Unknown column 'ID_RAISON_SORTIES' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(21): CodeIgniter\Database\BaseConnection->query('SELECT SUM(QTE) * SUM(PU) as tot_ach FROM sortie WHERE ID_RAISON_SORTIES=1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 14:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 14:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-03-19 15:00:29 --> mysqli_sql_exception: Table 'sa_maria.depense' doesn't exist in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(MONT...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(MONT...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(MONT...')
+#3 C:\xampp\htdocs\sa_maria\app\Controllers\dashbord\Dashbord.php(24): CodeIgniter\Database\BaseConnection->query('SELECT SUM(MONT...')
+#4 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+#5 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+#6 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2026-03-19 15:00:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sa_maria.depense' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\dashbord\Dashbord.php(24): CodeIgniter\Database\BaseConnection->query('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 15:00:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sa_maria.depense' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1')
+ 3 APPPATH\Controllers\dashbord\Dashbord.php(24): CodeIgniter\Database\BaseConnection->query('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-03-19 15:00:29 --> [Caused by] mysqli_sql_exception: Table 'sa_maria.depense' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1')
+ 4 APPPATH\Controllers\dashbord\Dashbord.php(24): CodeIgniter\Database\BaseConnection->query('SELECT SUM(MONTANT) as tot_ach FROM depense WHERE 1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\dashbord\Dashbord->get_view()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dashbord\Dashbord))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-03-19 15:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 15:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-03-19 16:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
