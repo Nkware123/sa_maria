@@ -10,26 +10,20 @@
         <!-- Filtres colorés -->
         <div class="row mb-4 g-2">
             <div class="col">
+                <input type="hidden" id="lastCategory" value="">
                 <div class="btn-group w-100" role="group">
-                    <button class="btn btn-primary text-white fw-bold py-3">
-                        <i class="bi bi-fire fs-4 me-2"></i>FAVORIS
+                    <?php foreach($categories as $cat){ ?>
+                    <button class="btn btn text-white fw-bold py-3" id="cat_<?=$cat->ID_SOUS_CATEGORIE?>" style="background-color: #3c5cb5;" onclick="get_product(<?php echo $cat->ID_SOUS_CATEGORIE; ?>)">
+                        <i class="bi bi-fire fs-4 me-2"></i><?=$cat->DESC_SOUS_CATEGORIE?>
                     </button>
-                    <button class="btn btn-primary fw-bold py-3">
-                        <i class="bi bi-cup-fill fs-4 me-2"></i>PRESSION
-                    </button>
-                    <button class="btn btn-primary text-white fw-bold py-3">
-                        <i class="bi bi-trophy-fill fs-4 me-2"></i>BOUTEILLES
-                    </button>
-                    <button class="btn btn-primary fw-bold py-3">
-                        <i class="bi bi-cup-straw fs-4 me-2"></i>SOFTS
-                    </button>
+                    <?php } ?>
                 </div>
             </div>
         </div>
 
         <!-- Grille des produits -->
-        <div class="row g-3 mb-4" style="max-height: 500px; overflow-y: auto;">
-            <?php echo $produits; ?>
+        <div class="row g-3 mb-4" id="product" style="max-height: 500px; overflow-y: auto;">
+            <?php // echo $produits; ?>
         </div>
 
         <!-- Panier -->
@@ -46,7 +40,7 @@
                                 </h4>
                             </div>
                             <div class="col-auto">
-                                <button class="btn btn-warning btn-sm rounded-pill">
+                                <button class="btn btn-outline-danger btn-sm rounded-pill" onclick="confirm('Êtes-vous sûr de vouloir vider le panier ?') && $('#cartData').val('') && getListCart()">
                                     <i class="bi bi-trash3 me-2"></i>Vider
                                 </button>
                             </div>
@@ -220,5 +214,35 @@
             }
         });
     }
+
+    function get_product(idCategorie)
+    {
+        let lastCategory=$('#lastCategory').val();
+        if(lastCategory !== ""){
+            $('#cat_'+lastCategory).removeClass('bg-primary');
+            $('#cat_'+lastCategory).attr('style', 'background-color: #3c5cb5;');
+        }
+        $('#cat_'+idCategorie).toggleClass('bg-primary text-white');
+        $('#lastCategory').val(idCategorie);
+
+        $.ajax({
+            url: '/ventes/get_product/'+idCategorie,
+            method: 'GET',
+            datatype: 'json',
+            success: function(response){
+                let res=JSON.parse(response);
+                if(res.status === true){
+                    $('#product').html(res.html);
+                }
+            },
+            error: function(){
+                alert("Une erreur est survenue lors du chargement des produits.");
+            }
+        });
+    }
+
+    $(document).ready(function(){
+        get_product(<?= $categories[0]->ID_SOUS_CATEGORIE ?? 0 ?>); // Charger tous les produits au chargement de la page
+    });
 
 </script>

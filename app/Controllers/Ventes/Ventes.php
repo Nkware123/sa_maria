@@ -14,26 +14,44 @@ class Ventes extends BaseController
   {
     $data=$this->urichk();
     $db=\Config\Database::connect();
-    $entree = $db->query("SELECT ID_PRODUIT,DESC_PRODUIT FROM produits WHERE EST_ACTIVE=1");
+    $categories = $db->query("SELECT ID_SOUS_CATEGORIE, DESC_SOUS_CATEGORIE FROM categorie_sous_categ WHERE EST_ACTIVE=1");
+    $categories = $categories->getResult();
+    $data["categories"] = $categories;
+
+    return view("Ventes/Ventes_Add_View",$data);
+  }
+
+  function get_product($idCat)
+  {
+    $db=\Config\Database::connect();
+    $entree = $db->query("SELECT ID_PRODUIT,DESC_PRODUIT,QTE_MINIMAL FROM produits WHERE EST_ACTIVE=1 AND ID_SOUS_CATEGORIE={$idCat}");
     $entrees = $entree->getResult();
     $html="";
     foreach ($entrees as $key) {
         $prod = $db->query("SELECT SUM(l.QTE_RESTANT) as qte,l.PU_VENTE FROM produits_lot l WHERE l.EST_ACTIVE=1 AND l.ID_PRODUIT=".$key->ID_PRODUIT);
         $prod = $prod->getRow();
+        if($prod->qte <= 0){
+             continue; // Ne pas afficher les produits en rupture de stock
+        }
+        $color_qte = "success";
+        if($prod->qte <= $key->QTE_MINIMAL){
+          $color_qte = "danger";
+        }
         $html .= "<div class=\"col-6 col-md-4 col-lg-3 col-xl-2 user-select-none\" onclick=\"addToCart({$key->ID_PRODUIT}, {$prod->PU_VENTE}, '{$key->DESC_PRODUIT}', {$prod->qte})\">
           <div class=\"card h-auto border-0 shadow-sm rounded-4 hover-scale\" style=\"cursor: pointer; transition: all 0.2s;\" onmouseover=\"this.style.transform='translateY(-5px)';this.style.boxShadow='0 1rem 2rem rgba(0,0,0,.15)';\" onmouseout=\"this.style.transform='';this.style.boxShadow=''\">
               <div class=\"card-body text-center p-3\">
                   <h6 class=\"fw-bold mb-2\">{$key->DESC_PRODUIT}</h6>
-                  <h4 class=\"text-warning fw-bold mb-2\">{$prod->PU_VENTE} BIF</h4>
-                  <span class=\"badge bg-success bg-opacity-10 text-success rounded-pill\">
+                  <h4 class=\"fw-bold mb-2\" style=\"color: #1E3A8A;\">
+                      {$prod->PU_VENTE} BIF
+                  </h4>
+                  <span class=\"badge bg-{$color_qte} bg-opacity-10 text-{$color_qte} rounded-pill\">
                       <i class=\"bi bi-check-circle-fill me-1\"></i> {$prod->qte} en stock
                   </span>
               </div>
           </div>
         </div>";
     }
-    $data["produits"]=$html;
-    return view("Ventes/Ventes_Add_View",$data);
+    return json_encode(["status"=>true,"html"=>$html]);
   }
 
   function save_commande(){

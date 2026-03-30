@@ -30,4 +30,5 @@ $routes->post('dashbord/get_rapport','dashbord\Dashbord::get_rapport');
 
 //routes ventes
 $routes->get('ventes/add','Ventes\Ventes::get_view');
+$routes->get('ventes/get_product/(:num)','Ventes\Ventes::get_product/$1');
 $routes->post('ventes/save_commande','Ventes\Ventes::save_commande');
