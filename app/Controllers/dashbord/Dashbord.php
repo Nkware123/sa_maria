@@ -35,15 +35,15 @@ class Dashbord extends BaseController
         $value = $this->request->getGet('filtre');
         if($value==1)
         {
-        $filtre=" DATE(DATE_INSERTION)=CURDATE()";
+            $filtre=" DATE(DATE_INSERTION)=CURDATE()";
         }
         else if($value==2)
         {
-        $filtre=" MONTH(DATE_INSERTION)=MONTH(CURDATE()) AND YEAR(DATE_INSERTION)=YEAR(CURDATE())";
+            $filtre=" MONTH(DATE_INSERTION)=MONTH(CURDATE()) AND YEAR(DATE_INSERTION)=YEAR(CURDATE())";
         }
         else
         {
-        $filtre=" YEAR(DATE_INSERTION)=YEAR(CURDATE())";
+            $filtre=" YEAR(DATE_INSERTION)=YEAR(CURDATE())";
         }
 
         $db = \Config\Database::connect();
@@ -159,7 +159,7 @@ class Dashbord extends BaseController
         $stock='';
 
         $color='#50b5d6';
-        $color1='#3de5e5';
+        $color1='#3d61e5';
 
         foreach ($query_all_produit as $value) {
             $get_vente= $db->query("SELECT ID_PRODUIT, SUM(l.QTE) tot_qte, SUM(PU) tot_ach FROM sortie l join produits_lot p ON p.ID_PRODUIT_LOT=l.ID_PRODUIT_LOT WHERE ID_RAISON_SORTIE=1 AND p.ID_PRODUIT=".$value->ID_PRODUIT);

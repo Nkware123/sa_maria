@@ -29,6 +29,8 @@ abstract class BaseController extends Controller
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
         $this->session = \Config\Services::session();
+        $this->My_Model = new My_Model();
+        $this->db = \Config\Database::connect();
     }
 
     //recuperation des segments

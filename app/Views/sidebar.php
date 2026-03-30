@@ -43,8 +43,8 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link <?php if($menu != 'user_liste' ) echo 'collapsed' ?>" href="<?=base_url('user_liste')?>">
-          <i class="bi bi-person"></i><span>Utilisateur</span>
+        <a class="nav-link <?php if($menu != 'ventes' ) echo 'collapsed' ?>" href="<?=base_url('ventes/add')?>">
+          <i class="bi bi-person"></i><span>Ventes</span>
         </a>
       </li>
       <!-- End users Nav -->
