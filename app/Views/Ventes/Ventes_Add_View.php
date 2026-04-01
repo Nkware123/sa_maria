@@ -57,20 +57,15 @@
                                 <h3 class="mb-0">TOTAL</h3>
                             </div>
                             <div class="col-auto">
-                                <h2 class="text-warning fw-bold mb-0" id="total">0,00 BIF</h2>
+                                <h2 class="text-dark fw-bold mb-0" id="total">0,00 BIF</h2>
                             </div>
                         </div>
 
                         <hr class="bg-white bg-opacity-25 my-3">
 
-                        <div class="row g-2 w-100" style="float: right;">
-                            <div class="col-3">
-                                <button class="btn btn-outline-danger w-100 py-3 rounded-pill">
-                                    <i class="bi bi-x-lg me-2"></i>Annuler
-                                </button>
-                            </div>
-                            <div class="col-3">
-                                <button class="btn btn-success w-100 py-3 rounded-pill fw-bold" onclick="save_commande()">
+                        <div class="row g-2 w-100 justify-content-end">
+                            <div class="col-2">
+                                <button class="btn btn-success w-100 py-2 rounded-pill fw-bold" onclick="save_commande()">
                                     <i class="bi bi-check-lg me-2"></i>VALIDER
                                 </button>
                             </div>

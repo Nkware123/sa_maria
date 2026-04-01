@@ -50,8 +50,8 @@
       <!-- End users Nav -->
 
       <li class="nav-item">
-        <a class="nav-link <?php if($menu != 'type_conge' ) echo 'collapsed' ?>" href="<?=base_url('type_conge')?>">
-          <i class="bi bi-menu-button-wide"></i><span>Type de congé</span>
+        <a class="nav-link <?php if($menu != 'achat' ) echo 'collapsed' ?>" href="<?=base_url('achat')?>">
+          <i class="bi bi-menu-button-wide"></i><span>Achats</span>
         </a>
       </li>
       <!-- End type conge Nav -->

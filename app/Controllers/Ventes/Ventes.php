@@ -24,7 +24,7 @@ class Ventes extends BaseController
   function get_product($idCat)
   {
     $db=\Config\Database::connect();
-    $entree = $db->query("SELECT ID_PRODUIT,DESC_PRODUIT,QTE_MINIMAL FROM produits WHERE EST_ACTIVE=1 AND ID_SOUS_CATEGORIE={$idCat}");
+    $entree = $db->query("SELECT ID_PRODUIT,DESC_PRODUIT,QTE_MINIMAL,NBR_BOUTEILLE_PAR_CASIER FROM produits WHERE EST_ACTIVE=1 AND ID_SOUS_CATEGORIE={$idCat}");
     $entrees = $entree->getResult();
     $html="";
     foreach ($entrees as $key) {
