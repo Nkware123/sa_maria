@@ -68,6 +68,9 @@ class Ventes extends BaseController
         if($qte == 0){
           continue; //si la quantité demandée a été satisfaite, on passe au produit suivant
         }
+        if($qte>SUM($lot->getResult()[0]->QTE_RESTANT)){
+          return json_encode(["status"=>"error","message"=>"Quantité demandée pour le produit {$item["descProduit"]} dépasse la quantité en stock!"]);
+        }
         if($l->QTE_RESTANT >= $qte){
           //mettre à jour la quantité restante du lot
           $qte_restant = $l->QTE_RESTANT - $qte;

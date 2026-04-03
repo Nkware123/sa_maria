@@ -35,3 +35,4 @@ $routes->post('ventes/save_commande','Ventes\Ventes::save_commande');
 
 //routes achat
 $routes->get('achat','Achat\Achat::get_view');
+$routes->post('achat/save_achat','Achat\Achat::save_achat');
