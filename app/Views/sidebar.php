@@ -49,10 +49,28 @@
       </li>
       <!-- End users Nav -->
 
-      <li class="nav-item">
+       <!-- <li class="nav-item">
         <a class="nav-link <?php if($menu != 'achat' ) echo 'collapsed' ?>" href="<?=base_url('achat')?>">
           <i class="bi bi-menu-button-wide"></i><span>Achats</span>
         </a>
+      </li> -->
+
+      <li class="nav-item">
+        <a class="nav-link <?php if($menu != 'achat' || $menu != 'achat-list' ) echo 'collapsed' ?>" data-bs-toggle="collapse" href="#achat" role="button" aria-expanded="false" aria-controls="achat">
+          <i class="bi bi-calendar2-check"></i><span>Achats</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="achat" class="nav-content collapse <?php if($menu == 'achat' || $menu == 'achat-list' ) echo 'show' ?>" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="<?=base_url('achat/achat-add')?>" class="<?php if($sousmenu == 'achat-add' ) echo 'active' ?>">
+              <i class="bi bi-circle"></i><span>Ajouter</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?=base_url('achat/achat-list')?>" class="<?php if($sousmenu == 'achat-list' ) echo 'active' ?>">
+              <i class="bi bi-circle"></i><span>Liste</span>
+            </a>
+          </li>
+        </ul>
       </li>
       <!-- End type conge Nav -->
 

@@ -40,10 +40,25 @@ class Achat extends BaseController
         "ID_FOURNISSEUR" => $item['id_fournisseur'],
         "EST_ACTIVE" => 1,
         "DATE_INSERTION" => date("Y-m-d H:i:s"),
-        "ID_USER_INSERTION" => session()->get("id_user")
+        "ID_USER_INSERTION" => session()->get("user_id")
       ]);
     }
 
     echo json_encode(["true" => "success", "message" => "Achat enregistré avec succès."]);
+  }
+
+  public function get_list_view()
+  {
+    $data=$this->urichk();
+    $db = \Config\Database::connect();
+
+    $get_data = $db->query("SELECT pl.ID_PRODUIT_LOT, p.DESC_PRODUIT, pl.QTE, pl.QTE_RESTANT, pl.PU_ACHAT, pl.PU_VENTE, pl.DATE_EXPIRATION, f.NOM_FOURNISSEUR, pl.DATE_INSERTION
+    FROM produits_lot pl
+    JOIN produits p ON pl.ID_PRODUIT = p.ID_PRODUIT
+    JOIN fournisseur f ON pl.ID_FOURNISSEUR = f.ID_FOURNISSEUR
+    WHERE pl.EST_ACTIVE = 1");
+    $data["get_data"] = $get_data->getResult();
+
+    return view("Achat/Achat_List_view",$data);
   }
 }

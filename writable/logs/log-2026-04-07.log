@@ -1,0 +1,95 @@
+INFO - 2026-04-07 07:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-07 07:48:15 --> ErrorException: Undefined array key "id_fournisseur"
+in APPPATH\Controllers\Achat\Achat.php on line 40.
+ 1 APPPATH\Controllers\Achat\Achat.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_fournisseur"', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\Achat\\Achat.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->save_achat()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-07 07:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-07 07:48:33 --> ErrorException: Undefined array key "id_fournisseur"
+in APPPATH\Controllers\Achat\Achat.php on line 40.
+ 1 APPPATH\Controllers\Achat\Achat.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_fournisseur"', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\Achat\\Achat.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->save_achat()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-07 07:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-07 07:50:41 --> ErrorException: Undefined array key "id_fournisseur"
+in APPPATH\Controllers\Achat\Achat.php on line 40.
+ 1 APPPATH\Controllers\Achat\Achat.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_fournisseur"', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\Achat\\Achat.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->save_achat()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-07 07:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-04-07 07:52:47 --> mysqli_sql_exception: Column 'ID_USER_INSERTION' cannot be null in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\sa_maria\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\sa_maria\app\Models\My_Model.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sa_maria\app\Controllers\BaseController.php(46): App\Models\My_Model->create('produits_lot', Array)
+#6 C:\xampp\htdocs\sa_maria\app\Controllers\Achat\Achat.php(43): App\Controllers\BaseController->save('produits_lot', Array)
+#7 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(941): App\Controllers\Achat\Achat->save_achat()
+#8 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+#9 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2026-04-07 07:52:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'ID_USER_INSERTION' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (:ID_PRODUIT:, :QTE:, :QTE_RESTANT:, :PU_ACHAT:, :PU_VENTE:, :DATE_EXPIRATION:, :ID_FOURNISSEUR:, :EST_ACTIVE:, :DATE_INSERTION:, :ID_USER_INSERTION:)', [...], false)
+ 2 APPPATH\Models\My_Model.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\BaseController.php(46): App\Models\My_Model->create('produits_lot', [...])
+ 4 APPPATH\Controllers\Achat\Achat.php(43): App\Controllers\BaseController->save('produits_lot', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->save_achat()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-04-07 07:52:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'ID_USER_INSERTION' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (\'1\', \'48\', \'48\', \'38000\', \'5000\', \'2026-10-07\', \'1\', 1, \'2026-04-07 07:52:47\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (\'1\', \'48\', \'48\', \'38000\', \'5000\', \'2026-10-07\', \'1\', 1, \'2026-04-07 07:52:47\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (:ID_PRODUIT:, :QTE:, :QTE_RESTANT:, :PU_ACHAT:, :PU_VENTE:, :DATE_EXPIRATION:, :ID_FOURNISSEUR:, :EST_ACTIVE:, :DATE_INSERTION:, :ID_USER_INSERTION:)', [...], false)
+ 4 APPPATH\Models\My_Model.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\BaseController.php(46): App\Models\My_Model->create('produits_lot', [...])
+ 6 APPPATH\Controllers\Achat\Achat.php(43): App\Controllers\BaseController->save('produits_lot', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->save_achat()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+CRITICAL - 2026-04-07 07:52:47 --> [Caused by] mysqli_sql_exception: Column 'ID_USER_INSERTION' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (\'1\', \'48\', \'48\', \'38000\', \'5000\', \'2026-10-07\', \'1\', 1, \'2026-04-07 07:52:47\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (\'1\', \'48\', \'48\', \'38000\', \'5000\', \'2026-10-07\', \'1\', 1, \'2026-04-07 07:52:47\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (\'1\', \'48\', \'48\', \'38000\', \'5000\', \'2026-10-07\', \'1\', 1, \'2026-04-07 07:52:47\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `produits_lot` (`ID_PRODUIT`, `QTE`, `QTE_RESTANT`, `PU_ACHAT`, `PU_VENTE`, `DATE_EXPIRATION`, `ID_FOURNISSEUR`, `EST_ACTIVE`, `DATE_INSERTION`, `ID_USER_INSERTION`) VALUES (:ID_PRODUIT:, :QTE:, :QTE_RESTANT:, :PU_ACHAT:, :PU_VENTE:, :DATE_EXPIRATION:, :ID_FOURNISSEUR:, :EST_ACTIVE:, :DATE_INSERTION:, :ID_USER_INSERTION:)', [...], false)
+ 5 APPPATH\Models\My_Model.php(21): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\BaseController.php(46): App\Models\My_Model->create('produits_lot', [...])
+ 7 APPPATH\Controllers\Achat\Achat.php(43): App\Controllers\BaseController->save('produits_lot', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->save_achat()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-07 07:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-07 07:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

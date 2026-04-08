@@ -220,6 +220,7 @@
       produit_nom: produit_nom,      
       qte_casiers: qte_casiers,
       qte_bouteilles: $('#qte_bouteilles').val(),
+      id_fournisseur: fournisseur,
       prix_achat: prix_achat_casier,
       prix_vente: prix_vente,
       date_expiration: date_expiration
