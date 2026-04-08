@@ -36,22 +36,43 @@
                         <th class="text-white">TOTAL</th>
                         <th class="text-white">DATE EXPIRATION</th>
                         <th class="text-white">DATE ENTRÉE</th>
-                        <th class="text-white">ACTION</th>
+                        <!-- <th class="text-white">ACTION</th> -->
                       </tr>
                     </thead>
                     <tbody class="table-light">
                       <?php 
                       $i = 1;
-                      foreach($get_data as $item): ?>
+                      foreach($get_data as $item):
+                        //$nbr_casier = $item->QTE / $item->NBR_BOUTEILLE_PAR_CASIER;
+                        $qte=$item->QTE;
+                        $nbr_casier=0;
+                        do{
+                          $qte = $qte - $item->NBR_BOUTEILLE_PAR_CASIER;
+                          $nbr_casier += 1;
+                        }while($qte >= $item->NBR_BOUTEILLE_PAR_CASIER);
+
+                        if($qte > 0){
+                          $bt= "<span class='badge bg-secondary text-white'>+ ".$qte. " bouteilles" . "</span>";
+                        }
+                        else{
+                          $bt="";
+                        }
+                      ?>
                         <tr>
                           <td><?= $i++ ?></td>
                           <td><?= $item->DESC_PRODUIT ?></td>
-                          <td><span class="badge bg-primary text-white"><?= $item->QTE ?></span></td>
-                          <td><small class="text-primary">Achat : </small><?= number_format($item->PU_ACHAT, 2, ',', ' ') ?> Fbu<br> <small class="text-success">Vente : </small><?= number_format($item->PU_VENTE, 2, ',', ' ') ?> Fbu</td>
-                          <td><?= number_format($item->PU_ACHAT * $item->QTE, 2, ',', ' ') ?> Fbu</td>
+
+                          <td><span class="badge bg-dark text-white"><?= $item->QTE ?></span> <small class="text-muted">(<?= number_format($nbr_casier, 0, ',', ' ') ?> casier <?=$bt?>)</small></td>
+
+                          <td><small class="text-primary">Achat : </small><?= number_format($item->PU_ACHAT, 2, ',', ' ') ?> Fbu<br> <small class="text-success">Vente : </small><?= number_format($item->PU_VENTE, 0, ',', ' ') ?> Fbu</td>
+
+                          <td><span class="text-primary"><?= number_format($item->PU_ACHAT * $item->QTE, 2, ',', ' ') ?> Fbu</span> <br> <span class="text-success"><?= number_format($item->PU_VENTE * $item->QTE, 0, ',', ' ') ?> Fbu</span></td>
+
                           <td><i class="bi bi-calendar"></i> <?= date("d/m/Y", strtotime($item->DATE_EXPIRATION)) ?></td>
+
                           <td><i class="bi bi-calendar"></i> <?= date("d/m/Y", strtotime($item->DATE_INSERTION)) ?></td>
-                          <td><button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button></td>
+
+                          <!-- <td><button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button></td> -->
                         </tr>
                       <?php endforeach; ?>
                     </tbody>

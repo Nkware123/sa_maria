@@ -52,7 +52,7 @@ class Achat extends BaseController
     $data=$this->urichk();
     $db = \Config\Database::connect();
 
-    $get_data = $db->query("SELECT pl.ID_PRODUIT_LOT, p.DESC_PRODUIT, pl.QTE, pl.QTE_RESTANT, pl.PU_ACHAT, pl.PU_VENTE, pl.DATE_EXPIRATION, f.NOM_FOURNISSEUR, pl.DATE_INSERTION
+    $get_data = $db->query("SELECT pl.ID_PRODUIT_LOT, p.DESC_PRODUIT, pl.QTE, pl.QTE_RESTANT, pl.PU_ACHAT, pl.PU_VENTE, pl.DATE_EXPIRATION, f.NOM_FOURNISSEUR, pl.DATE_INSERTION,p.NBR_BOUTEILLE_PAR_CASIER
     FROM produits_lot pl
     JOIN produits p ON pl.ID_PRODUIT = p.ID_PRODUIT
     JOIN fournisseur f ON pl.ID_FOURNISSEUR = f.ID_FOURNISSEUR
