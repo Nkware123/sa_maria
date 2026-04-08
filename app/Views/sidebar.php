@@ -74,21 +74,21 @@
       </li>
       <!-- End type conge Nav -->
 
-      <li class="nav-item">
+      <li class="nav-item" hidden>
         <a class="nav-link <?php if($menu != 'demande' ) echo 'collapsed' ?>" href="<?=base_url('demande/liste')?>">
           <i class="bi bi-pencil-fill"></i><span>Demande</span>
         </a>
       </li>
       <!-- End users Nav -->
 
-      <li class="nav-item">
+      <li class="nav-item" hidden>
         <a class="nav-link <?php if($menu != 'branche' ) echo 'collapsed' ?>" href="<?=base_url('branche')?>">
           <i class="bi bi-house"></i><span>Agences</span>
         </a>
       </li>
       <!-- End users Nav -->
 
-      <li class="nav-item">
+      <li class="nav-item" hidden>
         <a class="nav-link <?php if($menu != 'Calender_Conge' ) echo 'collapsed' ?>" href="<?=base_url('Calender_Conge')?>">
           <i class="bi bi-calendar"></i><span>Calendrier des congés</span>
         </a>

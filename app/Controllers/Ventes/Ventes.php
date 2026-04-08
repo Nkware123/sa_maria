@@ -64,11 +64,15 @@ class Ventes extends BaseController
       //trouver le lot correspondant au produit
       $lot = $db->query("SELECT ID_PRODUIT_LOT, QTE_RESTANT FROM produits_lot WHERE ID_PRODUIT={$item["idProduit"]} AND QTE_RESTANT > 0 ORDER BY ID_PRODUIT_LOT DESC");
       $qte=$item["qte"];
+
+      $lotsum = $db->query("SELECT SUM(QTE_RESTANT) as total_qte FROM produits_lot WHERE ID_PRODUIT={$item["idProduit"]} AND QTE_RESTANT > 0 ORDER BY ID_PRODUIT_LOT DESC");
+      $qte=$item["qte"];
+      $lotsum = $lotsum->getRow();
       foreach($lot->getResult() as $l){
         if($qte == 0){
           continue; //si la quantité demandée a été satisfaite, on passe au produit suivant
         }
-        if($qte>SUM($lot->getResult()[0]->QTE_RESTANT)){
+        if($qte>$lotsum->total_qte){
           return json_encode(["status"=>"error","message"=>"Quantité demandée pour le produit {$item["descProduit"]} dépasse la quantité en stock!"]);
         }
         if($l->QTE_RESTANT >= $qte){
