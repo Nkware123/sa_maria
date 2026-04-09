@@ -74,9 +74,9 @@
       </li>
       <!-- End type conge Nav -->
 
-      <li class="nav-item" hidden>
-        <a class="nav-link <?php if($menu != 'demande' ) echo 'collapsed' ?>" href="<?=base_url('demande/liste')?>">
-          <i class="bi bi-pencil-fill"></i><span>Demande</span>
+      <li class="nav-item">
+        <a class="nav-link <?php if($menu != 'depense' ) echo 'collapsed' ?>" href="<?=base_url('depense/depense-list')?>">
+          <i class="bi bi-pencil-fill"></i><span>Dépenses</span>
         </a>
       </li>
       <!-- End users Nav -->

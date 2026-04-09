@@ -37,3 +37,7 @@ $routes->post('ventes/save_commande','Ventes\Ventes::save_commande');
 $routes->get('achat/achat-add','Achat\Achat::get_view');
 $routes->get('achat/achat-list','Achat\Achat::get_list_view');
 $routes->post('achat/save_achat','Achat\Achat::save_achat');
+
+//routes depense
+$routes->get('depense/depense-list','Depense\Depense::get_view');
+$routes->post('depense/save_depense','Depense\Depense::save_depense');
