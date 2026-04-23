@@ -25,19 +25,31 @@ $routes->post('login/login','login\login::login');
 $routes->get('logout','login\login::logout');
 
 //routes dashbord
-$routes->get('dashbord/dashbord','dashbord\Dashbord::get_view');
-$routes->post('dashbord/get_rapport','dashbord\Dashbord::get_rapport');
+$routes->group('dashbord',['namespace' => 'App\Modules\Dashbord\controllers'], function($routes){
+    $routes->get('dashbord','Dashbord::get_view');
+    $routes->post('get_rapport','Dashbord::get_rapport');
+});
 
 //routes ventes
-$routes->get('ventes/add','Ventes\Ventes::get_view');
-$routes->get('ventes/get_product/(:num)','Ventes\Ventes::get_product/$1');
-$routes->post('ventes/save_commande','Ventes\Ventes::save_commande');
+$routes->group('/',['namespace' => 'App\Modules\Ventes\controllers'], function($routes){
+    $routes->get('ventes/vente-add','Ventes::get_view');
+    $routes->get('ventes/vente-list','Ventes::getListe');
+    $routes->get('ventes/get_product/(:num)','Ventes::get_product/$1');
+    $routes->post('ventes/save_commande','Ventes::save_commande');
+});
 
 //routes achat
-$routes->get('achat/achat-add','Achat\Achat::get_view');
-$routes->get('achat/achat-list','Achat\Achat::get_list_view');
-$routes->post('achat/save_achat','Achat\Achat::save_achat');
+$routes->group('/',['namespace' => 'App\Modules\Achat\controllers'], function($routes){
+    $routes->get('achat/achat-add','Achat::get_view');
+    $routes->get('achat/achat-list','Achat::get_list_view');
+    $routes->post('achat/save_achat','Achat::save_achat');
+});
 
 //routes depense
-$routes->get('depense/depense-list','Depense\Depense::get_view');
-$routes->post('depense/save_depense','Depense\Depense::save_depense');
+$routes->group('/',['namespace' => 'App\Modules\Depense\controllers'], function($routes){
+    $routes->get('depense/depense-list','Depense::get_view');
+    $routes->post('depense/save_depense','Depense::save_depense');
+});
+
+//qr code
+$routes->get('generate_qr_code','Generate_qrcode::generate_qr_code');

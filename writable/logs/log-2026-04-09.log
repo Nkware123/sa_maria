@@ -189,3 +189,142 @@ INFO - 2026-04-09 07:14:32 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2026-04-09 07:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
 INFO - 2026-04-09 07:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
 INFO - 2026-04-09 07:15:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:42:53 --> Error: Cannot instantiate abstract class App\Controllers\BaseController
+in SYSTEMPATH\CodeIgniter.php on line 913.
+ 1 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:44:07 --> ParseError: syntax error, unexpected token "use"
+in APPPATH\Helpers\qrcode_helper.php on line 44.
+ 1 APPPATH\Controllers\BaseController.php(34): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:45:29 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Helpers\qrcode_helper.php(29): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode))
+ 3 APPPATH\Controllers\Achat\Achat.php(70): generate_qrcode_png('tel:*422%23', 300, true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:47:37 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Helpers\qrcode_helper.php(29): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode))
+ 3 APPPATH\Controllers\Achat\Achat.php(70): generate_qrcode_png('tel:*422%23', 300, true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:48:45 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Helpers\qrcode_helper.php(29): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode))
+ 3 APPPATH\Controllers\Achat\Achat.php(70): generate_qrcode_png('tel:*422%23', 300, true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:48:58 --> Exception: Unable to generate image: please check if the GD extension is enabled and configured correctly
+in VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), null, null, [...])
+ 2 APPPATH\Helpers\qrcode_helper.php(29): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode))
+ 3 APPPATH\Controllers\Achat\Achat.php(70): generate_qrcode_png('tel:*422%23', 300, true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:50:14 --> Error: Call to undefined function App\Controllers\Achat\generate_qrcode_png()
+in APPPATH\Controllers\Achat\Achat.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:53:49 --> Error: Call to undefined method App\Controllers\Achat\Achat::generateSvgQrCode()
+in APPPATH\Controllers\Achat\Achat.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:54:20 --> Error: Call to undefined method App\Controllers\Achat\Achat::generateSvgQrCode()
+in APPPATH\Controllers\Achat\Achat.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:54:25 --> Error: Call to undefined method App\Controllers\Achat\Achat::generateSvgQrCode()
+in APPPATH\Controllers\Achat\Achat.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:54:29 --> Error: Call to undefined method App\Controllers\Achat\Achat::generateSvgQrCode()
+in APPPATH\Controllers\Achat\Achat.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 10:55:43 --> ErrorException: Undefined variable $qrData
+in APPPATH\Controllers\Achat\Achat.php on line 74.
+ 1 APPPATH\Controllers\Achat\Achat.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $qrData', 'C:\\xampp\\htdocs\\sa_maria\\app\\Controllers\\Achat\\Achat.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Achat\Achat->generate_qr_code()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Achat\Achat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 10:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 13:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 13:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 13:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 14:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 14:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 14:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 14:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 14:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-04-09 14:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 14:35:53 --> chillerlan\QRCode\QRCodeException: ext-gd not loaded
+in VENDORPATH\chillerlan\php-qrcode\src\Output\QRImage.php on line 63.
+ 1 VENDORPATH\chillerlan\php-qrcode\src\QRCode.php(250): chillerlan\QRCode\Output\QRImage->__construct(Object(chillerlan\QRCode\QROptions), Object(chillerlan\QRCode\Data\QRMatrix))
+ 2 VENDORPATH\chillerlan\php-qrcode\src\QRCode.php(180): chillerlan\QRCode\QRCode->initOutputInterface('https://www.bije.bi')
+ 3 APPPATH\Controllers\Generate_qrcode.php(26): chillerlan\QRCode\QRCode->render('https://www.bije.bi')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Generate_qrcode->generate_qr_code()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate_qrcode))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')
+INFO - 2026-04-09 14:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-04-09 14:36:44 --> chillerlan\QRCode\QRCodeException: ext-gd not loaded
+in VENDORPATH\chillerlan\php-qrcode\src\Output\QRImage.php on line 63.
+ 1 VENDORPATH\chillerlan\php-qrcode\src\QRCode.php(250): chillerlan\QRCode\Output\QRImage->__construct(Object(chillerlan\QRCode\QROptions), Object(chillerlan\QRCode\Data\QRMatrix))
+ 2 VENDORPATH\chillerlan\php-qrcode\src\QRCode.php(180): chillerlan\QRCode\QRCode->initOutputInterface('https://www.bije.bi')
+ 3 APPPATH\Controllers\Generate_qrcode.php(26): chillerlan\QRCode\QRCode->render('https://www.bije.bi')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Generate_qrcode->generate_qr_code()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Generate_qrcode))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')

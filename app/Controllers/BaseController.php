@@ -31,6 +31,7 @@ abstract class BaseController extends Controller
         $this->session = \Config\Services::session();
         $this->My_Model = new My_Model();
         $this->db = \Config\Database::connect();
+        helper('qrcode');
     }
 
     //recuperation des segments

@@ -1,0 +1,58 @@
+ERROR - 2026-04-17 07:09:48 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sa_maria', 3306, '', 0)
+#1 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sa_maria\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 C:\xampp\htdocs\sa_maria\system\Session\Session.php(919): session_start()
+#5 C:\xampp\htdocs\sa_maria\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp\htdocs\sa_maria\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#7 C:\xampp\htdocs\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 C:\xampp\htdocs\sa_maria\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp\htdocs\sa_maria\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp\htdocs\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 C:\xampp\htdocs\sa_maria\app\Controllers\BaseController.php(31): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#14 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#17 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\xampp\htdocs\sa_maria\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sa_maria\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sa_maria\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 C:\xampp\htdocs\sa_maria\system\Session\Session.php(919): session_start()
+#4 C:\xampp\htdocs\sa_maria\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp\htdocs\sa_maria\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#6 C:\xampp\htdocs\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 C:\xampp\htdocs\sa_maria\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\htdocs\sa_maria\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp\htdocs\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 C:\xampp\htdocs\sa_maria\app\Controllers\BaseController.php(31): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#12 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#13 C:\xampp\htdocs\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\sa_maria\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2026-04-17 07:09:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(693): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Controllers\BaseController.php(31): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sa_maria\\public\\index.php')

@@ -42,18 +42,29 @@
         </a>
       </li><!-- End Dashboard Nav -->
 
-      <li class="nav-item">
+      <!-- <li class="nav-item" hidden>
         <a class="nav-link <?php if($menu != 'ventes' ) echo 'collapsed' ?>" href="<?=base_url('ventes/add')?>">
           <i class="bi bi-person"></i><span>Ventes</span>
         </a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link <?php if($menu != 'ventes') echo 'collapsed' ?>" data-bs-toggle="collapse" href="#vente" role="button" aria-expanded="false" aria-controls="achat">
+          <i class="bi bi-calendar2-check"></i><span>Ventes</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="vente" class="nav-content collapse <?php if($menu == 'ventes' || $menu == 'ventes-list' ) echo 'show' ?>" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="<?=base_url('ventes/vente-add')?>" class="<?php if($sousmenu == 'vente-add' ) echo 'active' ?>">
+              <i class="bi bi-circle"></i><span>Ajouter</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?=base_url('ventes/vente-list')?>" class="<?php if($sousmenu == 'vente-list' ) echo 'active' ?>">
+              <i class="bi bi-circle"></i><span>Liste</span>
+            </a>
+          </li>
+        </ul>
       </li>
       <!-- End users Nav -->
-
-       <!-- <li class="nav-item">
-        <a class="nav-link <?php if($menu != 'achat' ) echo 'collapsed' ?>" href="<?=base_url('achat')?>">
-          <i class="bi bi-menu-button-wide"></i><span>Achats</span>
-        </a>
-      </li> -->
 
       <li class="nav-item">
         <a class="nav-link <?php if($menu != 'achat' || $menu != 'achat-list' ) echo 'collapsed' ?>" data-bs-toggle="collapse" href="#achat" role="button" aria-expanded="false" aria-controls="achat">
