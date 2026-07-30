@@ -1,0 +1,67 @@
+INFO - 2026-07-23 07:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-23 07:52:41 --> ErrorException: Undefined array key "qte_bouteilles"
+in APPPATH\Modules\Achat\controllers\Achat.php on line 38.
+ 1 APPPATH\Modules\Achat\controllers\Achat.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "qte_bouteilles"', 'E:\\charbel\\projects\\sa_maria\\app\\Modules\\Achat\\controllers\\Achat.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Achat\controllers\Achat->save_achat()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Achat\controllers\Achat))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-23 07:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-23 07:54:35 --> ErrorException: Undefined array key "id"
+in APPPATH\Modules\Commande\controllers\Commande_Client.php on line 50.
+ 1 APPPATH\Modules\Commande\controllers\Commande_Client.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'E:\\charbel\\projects\\sa_maria\\app\\Modules\\Commande\\controllers\\Commande_Client.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->save_commande()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-23 07:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-23 07:54:53 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Modules\Commande\controllers\Commande_Client.php on line 44.
+ 1 APPPATH\Modules\Commande\controllers\Commande_Client.php(44): json_decode([...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->save_commande()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-23 07:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-23 07:54:58 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Modules\Commande\controllers\Commande_Client.php on line 44.
+ 1 APPPATH\Modules\Commande\controllers\Commande_Client.php(44): json_decode([...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->save_commande()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-23 07:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-23 07:55:41 --> ErrorException: Undefined array key "id"
+in APPPATH\Modules\Commande\controllers\Commande_Client.php on line 52.
+ 1 APPPATH\Modules\Commande\controllers\Commande_Client.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'E:\\charbel\\projects\\sa_maria\\app\\Modules\\Commande\\controllers\\Commande_Client.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->save_commande()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-23 07:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2026-07-23 07:55:46 --> ErrorException: Undefined array key "id"
+in APPPATH\Modules\Commande\controllers\Commande_Client.php on line 52.
+ 1 APPPATH\Modules\Commande\controllers\Commande_Client.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'E:\\charbel\\projects\\sa_maria\\app\\Modules\\Commande\\controllers\\Commande_Client.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->save_commande()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-23 07:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-23 07:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

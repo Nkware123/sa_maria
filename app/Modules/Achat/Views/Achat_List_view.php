@@ -30,6 +30,7 @@
                     <thead class="table-dark">
                       <tr>
                         <th>#</th>
+                        <th>Lot</th>
                         <th class="text-white">PRODUIT</th>
                         <th class="text-white">QTE</th>
                         <th class="text-white">PRIX</th>
@@ -60,6 +61,7 @@
                       ?>
                         <tr>
                           <td><?= $i++ ?></td>
+                          <td><span class="badge bg-success text-white"><?= $item->NUM_LOT ?></span></td>
                           <td><?= $item->DESC_PRODUIT ?></td>
 
                           <td><span class="badge bg-dark text-white"><?= $item->QTE ?></span> <small class="text-muted">(<?= number_format($nbr_casier, 0, ',', ' ') ?> casier <?=$bt?>)</small></td>

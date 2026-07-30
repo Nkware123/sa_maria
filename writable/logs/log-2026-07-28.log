@@ -1,0 +1,168 @@
+ERROR - 2026-07-28 08:34:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\charbel\projects\sa_maria\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\charbel\projects\sa_maria\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sa_maria', 3306, '', 0)
+#1 E:\charbel\projects\sa_maria\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\charbel\projects\sa_maria\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 E:\charbel\projects\sa_maria\system\Session\Session.php(919): session_start()
+#5 E:\charbel\projects\sa_maria\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 E:\charbel\projects\sa_maria\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#7 E:\charbel\projects\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 E:\charbel\projects\sa_maria\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 E:\charbel\projects\sa_maria\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 E:\charbel\projects\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 E:\charbel\projects\sa_maria\app\Controllers\BaseController.php(31): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 E:\charbel\projects\sa_maria\system\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 E:\charbel\projects\sa_maria\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#14 E:\charbel\projects\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 E:\charbel\projects\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#16 E:\charbel\projects\sa_maria\system\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\proj...')
+#17 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\charbel\projects\sa_maria\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\charbel\projects\sa_maria\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\charbel\projects\sa_maria\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 E:\charbel\projects\sa_maria\system\Session\Session.php(919): session_start()
+#4 E:\charbel\projects\sa_maria\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 E:\charbel\projects\sa_maria\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#6 E:\charbel\projects\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 E:\charbel\projects\sa_maria\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 E:\charbel\projects\sa_maria\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 E:\charbel\projects\sa_maria\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 E:\charbel\projects\sa_maria\app\Controllers\BaseController.php(31): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 E:\charbel\projects\sa_maria\system\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#12 E:\charbel\projects\sa_maria\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#13 E:\charbel\projects\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 E:\charbel\projects\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 E:\charbel\projects\sa_maria\system\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\proj...')
+#16 {main}
+CRITICAL - 2026-07-28 08:34:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(693): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Controllers\BaseController.php(31): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-28 08:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2026-07-28 08:35:30 --> mysqli_sql_exception: Unknown column 'd.ID_COMMANDE_CLIENT' in 'on clause' in E:\charbel\projects\sa_maria\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\charbel\projects\sa_maria\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM c...', 0)
+#1 E:\charbel\projects\sa_maria\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 E:\charbel\projects\sa_maria\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 E:\charbel\projects\sa_maria\app\Modules\Commande\controllers\Commande_Client.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 E:\charbel\projects\sa_maria\system\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->liste_commande()
+#5 E:\charbel\projects\sa_maria\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+#6 E:\charbel\projects\sa_maria\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\charbel\projects\sa_maria\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 E:\charbel\projects\sa_maria\system\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\proj...')
+#9 {main}
+CRITICAL - 2026-07-28 08:35:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'd.ID_COMMANDE_CLIENT' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Modules\Commande\controllers\Commande_Client.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->liste_commande()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+CRITICAL - 2026-07-28 08:35:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'd.ID_COMMANDE_CLIENT' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT')
+ 3 APPPATH\Modules\Commande\controllers\Commande_Client.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->liste_commande()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+CRITICAL - 2026-07-28 08:35:30 --> [Caused by] mysqli_sql_exception: Unknown column 'd.ID_COMMANDE_CLIENT' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT')
+ 4 APPPATH\Modules\Commande\controllers\Commande_Client.php(74): CodeIgniter\Database\BaseConnection->query('SELECT * FROM commande_client_detail d JOIN commande_client c ON d.ID_COMMANDE_CLIENT=c.ID_COMMANDE_CLIENT JOIN produits p ON d.ID_PRODUIT=p.ID_PRODUIT')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Modules\Commande\controllers\Commande_Client->liste_commande()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Commande\controllers\Commande_Client))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\charbel\\projects\\sa_maria\\public\\index.php')
+INFO - 2026-07-28 08:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 08:59:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 09:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 10:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 10:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 12:42:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2026-07-28 16:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

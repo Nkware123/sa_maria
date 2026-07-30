@@ -51,5 +51,13 @@ $routes->group('/',['namespace' => 'App\Modules\Depense\controllers'], function(
     $routes->post('depense/save_depense','Depense::save_depense');
 });
 
+//module commande
+$routes->group('/',['namespace' => 'App\Modules\Commande\controllers'], function($routes){
+    $routes->get('commande/client','Commande_Client::get_view');
+    $routes->get('commande/get_product','Commande_Client::get_product');
+    $routes->post('commande/save_commande','Commande_Client::save_commande');
+    $routes->get('commande/liste_commandes_client','Commande_Client::liste_commande');
+});
+
 //qr code
 $routes->get('generate_qr_code','Generate_qrcode::generate_qr_code');

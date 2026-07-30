@@ -29,8 +29,11 @@ class Achat extends BaseController
     $data = $this->request->getPost('cart');
     // $data = json_decode($data, true);
     $db = \Config\Database::connect();
+    
+    $NUM_LOT="LOT_".date('Y').date('m').date('d')."_".date('h').":".date('i');
     foreach ($data as $item) {
       $this->save("produits_lot", [
+        "NUM_LOT"=>$NUM_LOT,
         "ID_PRODUIT" => $item['produit_id'],
         "QTE" => $item['qte_bouteilles'],
         "QTE_RESTANT" => $item['qte_bouteilles'],
@@ -52,7 +55,7 @@ class Achat extends BaseController
     $data=$this->urichk();
     $db = \Config\Database::connect();
 
-    $get_data = $db->query("SELECT pl.ID_PRODUIT_LOT, p.DESC_PRODUIT, pl.QTE, pl.QTE_RESTANT, pl.PU_ACHAT, pl.PU_VENTE, pl.DATE_EXPIRATION, f.NOM_FOURNISSEUR, pl.DATE_INSERTION,p.NBR_BOUTEILLE_PAR_CASIER
+    $get_data = $db->query("SELECT pl.ID_PRODUIT_LOT,pl.NUM_LOT, p.DESC_PRODUIT, pl.QTE, pl.QTE_RESTANT, pl.PU_ACHAT, pl.PU_VENTE, pl.DATE_EXPIRATION, f.NOM_FOURNISSEUR, pl.DATE_INSERTION,p.NBR_BOUTEILLE_PAR_CASIER
     FROM produits_lot pl
     JOIN produits p ON pl.ID_PRODUIT = p.ID_PRODUIT
     JOIN fournisseur f ON pl.ID_FOURNISSEUR = f.ID_FOURNISSEUR
